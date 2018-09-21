@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: rgb(14, 14, 14);
     font-size: 1em;
     line-height: 1.4;
 }
@@ -96,8 +96,43 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
+
+html {
+    background-image: url("https://images.unsplash.com/photo-1512279093314-5926a353720c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=960b9a0200eef6e44324041c4ddc4ca7&auto=format&fit=crop&w=750&q=80");
+    background-size: cover;
+}
 
 
+article, footer{
+    background-color: rgba(235, 188, 188, 0.5);
+    box-shadow: 0 0 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+h1{
+    font-family: 'Nanum Pen Script', cursive;
+    letter-spacing: 1em;
+}
+
+dl{
+   float: letf; 
+}
+dt{
+    font-style: italic;
+}
+
+a:link{
+    color:rgb(146, 125, 5);
+}
+footer{
+    text-align: center;
+    font-size: 1.3em;
+    
+}
 
 
 
@@ -143,7 +178,8 @@ textarea {
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    white-space: nowrap;
+    /* 1 */
 }
 
 /*
@@ -185,8 +221,10 @@ textarea {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
@@ -204,9 +242,9 @@ textarea {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -217,11 +255,13 @@ textarea {
    ========================================================================== */
 
 @media print {
+
     *,
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster */
+        color: #000 !important;
+        /* Black prints faster */
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
@@ -233,11 +273,11 @@ textarea {
     }
 
     a[href]:after {
-        content: " (" attr(href) ")";
+        content: " ("attr(href) ")";
     }
 
     abbr[title]:after {
-        content: " (" attr(title) ")";
+        content: " ("attr(title) ")";
     }
 
     /*
@@ -253,6 +293,7 @@ textarea {
     pre {
         white-space: pre-wrap !important;
     }
+
     pre,
     blockquote {
         border: 1px solid #999;
@@ -284,4 +325,5 @@ textarea {
     h3 {
         page-break-after: avoid;
     }
-}
+
+    /*Editations*/
