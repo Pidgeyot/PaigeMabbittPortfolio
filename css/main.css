@@ -104,7 +104,8 @@ html {
 }
 
 
-article, footer{
+article,
+footer {
     background-color: rgba(235, 188, 188, 0.5);
     box-shadow: 0 0 40px;
     max-width: 1000px;
@@ -113,25 +114,27 @@ article, footer{
 
 }
 
-h1{
+h1 {
     font-family: 'Nanum Pen Script', cursive;
     letter-spacing: 1em;
 }
 
-dl{
-   float: letf; 
+dl {
+    float: letfd;
 }
-dt{
+
+dt {
     font-style: italic;
 }
 
-a:link{
-    color:rgb(146, 125, 5);
+a:link {
+    color: rgb(146, 125, 5);
 }
-footer{
+
+footer {
     text-align: center;
     font-size: 1.3em;
-    
+
 }
 
 
