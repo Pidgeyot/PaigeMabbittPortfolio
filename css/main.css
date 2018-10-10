@@ -96,31 +96,70 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/*Color Palatte*/
+/* Pink (235, 188, 188, 0.5) */
+/* Gold (146, 125, 5) */
+/* Gray (128,128,128) */
+
 @import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
 
 html {
     background-image: url("https://images.unsplash.com/photo-1512279093314-5926a353720c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=960b9a0200eef6e44324041c4ddc4ca7&auto=format&fit=crop&w=750&q=80");
+    background-attachment: fixed;
     background-size: cover;
+
 }
 
-
+header,
 article,
 footer {
+    color: gray;
     background-color: rgba(235, 188, 188, 0.5);
     box-shadow: 0 0 40px;
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
+    border-radius: 15px 50px 30px;
+}
 
+nav {
+    background-color: rgba(235, 188, 188, 0.5);
+    box-shadow: 0 0 40px;
+    max-width: 1000px;
+    margin: 0;
+    padding-right: 40px;
+    border-radius: 15px 50px 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+nav>ul {
+    list-style: none;
+    text-align: left;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 25px;
+    padding: 40px, 0px;
+
+}
+
+li {
+    margin-top: 125px;
+    margin-bottom: 125px;
 }
 
 h1 {
     font-family: 'Nanum Pen Script', cursive;
     letter-spacing: 1em;
+    text-decoration: underline;
+    text-align: center;
+    color: rgb(146, 125, 5);
 }
 
 dl {
-    float: letfd;
+    text-indent: 250px;
 }
 
 dt {
