@@ -105,7 +105,7 @@ textarea {
 @import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
 
 html {
-    background-image: url("https://images.unsplash.com/photo-1512279093314-5926a353720c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=960b9a0200eef6e44324041c4ddc4ca7&auto=format&fit=crop&w=750&q=80");
+    background-image: url("https://images.unsplash.com/photo-1531736275454-adc48d079ce9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c5f24cfa05077c51ded1c7eaf3de2e7&auto=format&fit=crop&w=2850&q=80");
     background-attachment: fixed;
     background-size: cover;
 
@@ -114,8 +114,8 @@ html {
 header,
 article,
 footer {
-    color: gray;
-    background-color: rgba(235, 188, 188, 0.5);
+    color: rgb(255, 255, 255);
+    background-color: rgb(243, 217, 145);
     box-shadow: 0 0 40px;
     max-width: 1000px;
     margin: 0 auto;
@@ -124,7 +124,8 @@ footer {
 }
 
 nav {
-    background-color: rgba(235, 188, 188, 0.5);
+    color: rgb(255, 255, 255);
+    background-color: rgb(243, 217, 145);
     box-shadow: 0 0 40px;
     max-width: 1000px;
     margin: 0;
@@ -146,8 +147,8 @@ nav>ul {
 }
 
 li {
-    margin-top: 125px;
-    margin-bottom: 125px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -155,8 +156,9 @@ h1 {
     letter-spacing: 1em;
     text-decoration: underline;
     text-align: center;
-    color: rgb(146, 125, 5);
+    color: rgb(133, 187, 204);
 }
+
 
 dl {
     text-indent: 250px;
@@ -166,8 +168,9 @@ dt {
     font-style: italic;
 }
 
-a:link {
-    color: rgb(146, 125, 5);
+a:link,
+a:visited {
+    color: rgb(133, 187, 204);
 }
 
 footer {
