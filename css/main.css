@@ -105,7 +105,6 @@ textarea {
 @import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
 
 html {
-    /* background-image: url("https://images.unsplash.com/photo-1531736275454-adc48d079ce9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c5f24cfa05077c51ded1c7eaf3de2e7&auto=format&fit=crop&w=2850&q=80"); */
     background-image: url('https://images.unsplash.com/photo-1521133573892-e44906baee46?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3bb59980f497c31767565ed35b1b3dc8&auto=format&fit=crop&w=934&q=80');
     background-attachment: fixed;
     background-size: cover;
@@ -121,7 +120,7 @@ footer {
     box-shadow: 0 0 40px white;
     max-width: 1000px;
     min-width: 10px;
-    margin: auto;
+    margin: auto 150px;
     padding: 20px;
     border-radius: 15px 50px 30px;
 }
@@ -138,16 +137,15 @@ nav {
     color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.295);
     box-shadow: 0 0 40px;
-    max-width: 1000px;
-    margin: 0;
+    max-width: 110px;
+    margin: .5em 0;
     padding-right: 40px;
     border-radius: 15px 50px 30px;
+    float: right;
     position: fixed;
     top: 0;
     right: 0;
     height: 95%;
-    margin-top: 1em;
-    margin-bottom: 1em;
 }
 
 nav>ul {
@@ -155,13 +153,11 @@ nav>ul {
     text-align: left;
     font-family: 'Nanum Pen Script', cursive;
     font-size: 25px;
-    padding: 40px, 0px;
 
 }
 
 li {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 80px 0;
 }
 
 h1 {
@@ -179,6 +175,10 @@ dl {
 
 dt {
     font-style: italic;
+}
+
+dd {
+    text-align: center;
 }
 
 a:link,
