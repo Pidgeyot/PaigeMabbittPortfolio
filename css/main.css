@@ -130,8 +130,8 @@ header {
     margin-top: 50px;
 }
 
-footer {
-    margin-bottom: 50px;
+article p {
+    padding: 25px;
 }
 
 nav {
@@ -189,8 +189,10 @@ a:visited {
 footer {
     text-align: center;
     font-size: 1.3em;
-
+    margin-bottom: 50px;
 }
+
+
 
 
 
