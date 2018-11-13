@@ -148,7 +148,7 @@ nav {
     height: 95%;
 }
 
-nav>ul {
+nav ul {
     list-style: none;
     text-align: left;
     font-family: 'Nanum Pen Script', cursive;
@@ -156,7 +156,7 @@ nav>ul {
 
 }
 
-li {
+nav li {
     margin: 80px 0;
 }
 
@@ -190,6 +190,31 @@ footer {
     text-align: center;
     font-size: 1.3em;
     margin-bottom: 50px;
+}
+
+img {
+    max-width: 30em;
+    max-height: 15em;
+    float: right;
+    clear: right;
+
+}
+
+img#bulb {
+    transform: translateY(-60px);
+}
+
+img#books {
+    transform: translateY(-110px) translateX(-400px);
+
+}
+
+img#toys {
+    transform: translateY(-100px);
+}
+
+img#water {
+    transform: translateY(-80px);
 }
 
 
