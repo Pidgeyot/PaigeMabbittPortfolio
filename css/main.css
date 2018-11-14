@@ -104,60 +104,29 @@ textarea {
 
 @import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
 
+/* General */
 html {
-    background-image: url('https://images.unsplash.com/photo-1521133573892-e44906baee46?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3bb59980f497c31767565ed35b1b3dc8&auto=format&fit=crop&w=934&q=80');
+    background-image: url();
     background-attachment: fixed;
     background-size: cover;
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(0, 0, 0);
 
 }
 
-header,
-article,
-footer {
-    color: rgb(77, 77, 77);
-    background-color: rgba(255, 255, 255, 0.295);
-    box-shadow: 0 0 40px white;
-    max-width: 1000px;
-    min-width: 10px;
-    margin: auto 150px;
-    padding: 20px;
-    border-radius: 15px 50px 30px;
+article {
+    color: rgb(255, 255, 255);
 }
 
-header {
-    margin-top: 50px;
+article:after {
+    clear: both;
+    content: "";
+    display: table;
 }
+
+
 
 article p {
     padding: 25px;
-}
-
-nav {
-    color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.295);
-    box-shadow: 0 0 40px;
-    max-width: 110px;
-    margin: .5em 0;
-    padding-right: 40px;
-    border-radius: 15px 50px 30px;
-    float: right;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 95%;
-}
-
-nav ul {
-    list-style: none;
-    text-align: left;
-    font-family: 'Nanum Pen Script', cursive;
-    font-size: 25px;
-
-}
-
-nav li {
-    margin: 80px 0;
 }
 
 h1 {
@@ -165,12 +134,24 @@ h1 {
     letter-spacing: 1em;
     text-decoration: underline;
     text-align: center;
-    color: rgb(180, 107, 150);
+    color: rgb(255, 255, 255);
 }
 
 
+
+footer {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 0 0 50px 0;
+    padding: 50px 0 10px 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
+
+/* Description List */
 dl {
-    text-indent: 250px;
+    color: white;
+    margin: 0 0 0 250px;
 }
 
 dt {
@@ -178,46 +159,172 @@ dt {
 }
 
 dd {
-    text-align: center;
+    display: inline;
+}
+
+
+/* Nav */
+nav {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 40px;
+    margin: .5em 0;
+    padding-right: 40px;
+    border-radius: 15px 50px 30px;
+
+}
+
+nav ul {
+    list-style: none;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 25px;
+}
+
+nav li {
+    margin: 0 85px;
+    display: inline;
+
 }
 
 a:link,
 a:visited {
-    color: rgb(91, 137, 163);
+    color: rgb(0, 0, 0);
 }
 
-footer {
-    text-align: center;
-    font-size: 1.3em;
-    margin-bottom: 50px;
+/* Text */
+#knowledge,
+#jobs {
+    margin-right: 325px;
 }
 
+#activities {
+    margin-left: 320px;
+}
+
+#school {
+    margin-left: 380px;
+}
+
+#other {
+    margin-right: 380px;
+}
+
+/* Images */
 img {
-    max-width: 30em;
-    max-height: 15em;
+    max-width: 40em;
+    max-height: 40em;
+    border-radius: 50%;
+
+}
+
+#books,
+#water {
+    margin: auto 6em;
+}
+
+#bulb,
+#toys {
+    margin: auto 8em;
+}
+
+
+/* Overlay */
+.overlay {
+    opacity: .6;
+}
+
+#books,
+#school,
+#water,
+#activities {
+    clear: both;
+    float: left;
+}
+
+#bulb,
+#knowledge,
+#toys,
+#jobs,
+#other {
+    clear: both;
     float: right;
-    clear: right;
 
 }
 
-img#bulb {
-    transform: translateY(-60px);
+ul#one {
+    position: absolute;
+    top: 285px;
+    bottom: -305px;
+    left: 650px;
+    right: 0px;
+    max-width: 40em;
+    max-height: 40em;
+    border-radius: 50%;
+    transition: .5s ease;
+    background-color: rgb(0, 68, 255);
 }
 
-img#books {
-    transform: translateY(-110px) translateX(-400px);
-
+p#two {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    max-width: 40em;
+    max-height: 40em;
+    border-radius: 50%;
+    transition: .5s ease;
+    background-color: rgb(0, 255, 157);
 }
 
-img#toys {
-    transform: translateY(-100px);
+p#three {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    max-width: 40em;
+    max-height: 40em;
+    border-radius: 50%;
+    transition: .5s ease;
+    background-color: rgb(238, 255, 0);
 }
 
-img#water {
-    transform: translateY(-80px);
+p#four {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 40em;
+    max-height: 40em;
+    border-radius: 50%;
+    transition: .5s ease;
+    background-color: rgb(0, 217, 255);
 }
 
+p#five {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 40em;
+    max-height: 40em;
+    border-radius: 50%;
+    transition: .5s ease;
+    background-color: rgb(255, 0, 255);
+}
 
+img#bulb:hover+ul#one {
+    opacity: 1;
+}
+
+img#books {}
+
+img#toys {}
+
+img#water {}
 
 
 
