@@ -206,7 +206,19 @@ a:visited {
 }
 
 #other {
-    margin-right: 380px;
+    margin-right: 400px;
+}
+
+.text {
+    font-size: 20px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#smalltext {
+    font-size: 17px;
 }
 
 /* Images */
@@ -214,7 +226,7 @@ img {
     max-width: 40em;
     max-height: 40em;
     border-radius: 50%;
-
+    position: relative;
 }
 
 #books,
@@ -223,14 +235,17 @@ img {
 }
 
 #bulb,
-#toys {
+#toys,
+#code {
     margin: auto 8em;
 }
 
 
 /* Overlay */
+
 .overlay {
-    opacity: .6;
+    opacity: 1;
+    color: black;
 }
 
 #books,
@@ -245,79 +260,80 @@ img {
 #knowledge,
 #toys,
 #jobs,
-#other {
+#other,
+#code {
     clear: both;
     float: right;
 
 }
 
-ul#one {
+.overlay#one {
     position: absolute;
     top: 285px;
-    bottom: -305px;
-    left: 650px;
-    right: 0px;
+    bottom: 78px;
+    left: 670px;
+    right: 128px;
     max-width: 40em;
     max-height: 40em;
     border-radius: 50%;
     transition: .5s ease;
-    background-color: rgb(0, 68, 255);
+    background-color: rgba(252, 252, 252);
 }
 
-p#two {
+.overlay#two {
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 773px;
+    bottom: -466px;
+    left: 95px;
+    right: 704px;
     max-width: 40em;
     max-height: 40em;
     border-radius: 50%;
     transition: .5s ease;
-    background-color: rgb(0, 255, 157);
+    background-color: rgba(252, 252, 252);
 }
 
-p#three {
+.overlay#three {
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 1319px;
+    bottom: -957px;
+    left: 670px;
+    right: 128px;
     max-width: 40em;
     max-height: 40em;
     border-radius: 50%;
     transition: .5s ease;
-    background-color: rgb(238, 255, 0);
+    background-color: rgba(252, 252, 252);
 }
 
-p#four {
+.overlay#four {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 1808px;
+    bottom: -1446px;
+    left: 95px;
+    right: 704px;
     max-width: 40em;
     max-height: 40em;
     border-radius: 50%;
     transition: .5s ease;
-    background-color: rgb(0, 217, 255);
+    background-color: rgba(252, 252, 252);
 }
 
-p#five {
+.overlay#five {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 2298px;
+    bottom: -1938px;
+    left: 670px;
+    right: 128px;
     max-width: 40em;
     max-height: 40em;
     border-radius: 50%;
     transition: .5s ease;
-    background-color: rgb(255, 0, 255);
+    background-color: rgba(252, 252, 252);
 }
 
-img#bulb:hover+ul#one {
-    opacity: 1;
+img#bulb:hover .overlay#one {
+    opacity: .9;
 }
 
 img#books {}
