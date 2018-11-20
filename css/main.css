@@ -237,7 +237,7 @@ img {
 #bulb,
 #toys,
 #code {
-    margin: auto 8em;
+    margin: auto 7em;
 }
 
 
@@ -269,10 +269,10 @@ img {
 
 .overlay#one {
     position: absolute;
-    top: 285px;
-    bottom: 78px;
-    left: 670px;
-    right: 128px;
+    top: 300px;
+    bottom: 95px;
+    left: 688px;
+    right: 0px;
     max-width: 40em;
     max-height: 40em;
     border-radius: 50%;
@@ -282,10 +282,10 @@ img {
 
 .overlay#two {
     position: absolute;
-    top: 773px;
-    bottom: -466px;
+    top: 790px;
+    bottom: -450px;
     left: 95px;
-    right: 704px;
+    right: 0px;
     max-width: 40em;
     max-height: 40em;
     border-radius: 50%;
@@ -295,10 +295,10 @@ img {
 
 .overlay#three {
     position: absolute;
-    top: 1319px;
-    bottom: -957px;
-    left: 670px;
-    right: 128px;
+    top: 1335px;
+    bottom: -940px;
+    left: 688px;
+    right: 0px;
     max-width: 40em;
     max-height: 40em;
     border-radius: 50%;
@@ -308,10 +308,10 @@ img {
 
 .overlay#four {
     position: absolute;
-    top: 1808px;
-    bottom: -1446px;
+    top: 1825px;
+    bottom: -1430px;
     left: 95px;
-    right: 704px;
+    right: 0px;
     max-width: 40em;
     max-height: 40em;
     border-radius: 50%;
@@ -321,10 +321,10 @@ img {
 
 .overlay#five {
     position: absolute;
-    top: 2298px;
-    bottom: -1938px;
-    left: 670px;
-    right: 128px;
+    top: 2315px;
+    bottom: -1925px;
+    left: 688px;
+    right: 0px;
     max-width: 40em;
     max-height: 40em;
     border-radius: 50%;
