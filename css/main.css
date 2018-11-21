@@ -106,13 +106,22 @@ textarea {
 
 /* General */
 html {
-    background-image: url();
+    background-image: url('https://images.pexels.com/photos/1050302/pexels-photo-1050302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
     background-attachment: fixed;
     background-size: cover;
     background-color: rgb(0, 0, 0);
 
 }
 
+h1 {
+    font-family: 'Nanum Pen Script', cursive;
+    letter-spacing: 1em;
+    text-decoration: underline;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/* Article */
 article {
     color: rgb(255, 255, 255);
 }
@@ -129,23 +138,26 @@ article p {
     padding: 25px;
 }
 
-h1 {
-    font-family: 'Nanum Pen Script', cursive;
-    letter-spacing: 1em;
-    text-decoration: underline;
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
 
 
 
+/* Footer */
 footer {
     text-align: center;
     font-size: 1.3em;
-    margin: 0 0 50px 0;
-    padding: 50px 0 10px 0;
-    color: rgb(255, 255, 255);
+    padding: 50px 0 30px 0;
     background-color: rgb(255, 255, 255);
+    color: white;
+}
+
+footer p {
+    background: -webkit-linear-gradient(rgb(0, 230, 161), rgb(0, 114, 207));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer a {
+    padding: 0px 5px;
 }
 
 /* Description List */
@@ -171,6 +183,7 @@ nav {
     margin: .5em 0;
     padding-right: 40px;
     border-radius: 15px 50px 30px;
+    height: 60px;
 
 }
 
@@ -178,12 +191,19 @@ nav ul {
     list-style: none;
     font-family: 'Nanum Pen Script', cursive;
     font-size: 25px;
+    padding-top: 15px;
 }
 
 nav li {
-    margin: 0 85px;
+    margin: 40px 85px 0px 85px;
     display: inline;
+    background: -webkit-linear-gradient(rgb(0, 230, 161), rgb(0, 114, 207));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+a:hover {
+    text-decoration: underline;
 }
 
 a:link,
@@ -191,7 +211,7 @@ a:visited {
     color: rgb(0, 0, 0);
 }
 
-/* Text */
+/* Overlay/Overlay Heading Text */
 #knowledge,
 #jobs {
     margin-right: 325px;
@@ -221,12 +241,13 @@ a:visited {
     font-size: 17px;
 }
 
-/* Images */
+/* Overlay Images */
 img {
     max-width: 40em;
     max-height: 40em;
     border-radius: 50%;
     position: relative;
+    filter: hue-rotate(50deg) brightness(110%);
 }
 
 #books,
@@ -245,7 +266,7 @@ img {
 
 .overlay {
     opacity: 0;
-    color: black;
+    color: rgb(0, 230, 161);
 }
 
 #books,
@@ -269,8 +290,8 @@ img {
 
 .overlay#one {
     position: absolute;
-    top: 300px;
-    bottom: 95px;
+    top: 309px;
+    bottom: 85px;
     left: 688px;
     right: 0px;
     max-width: 40em;
@@ -282,9 +303,9 @@ img {
 
 .overlay#two {
     position: absolute;
-    top: 790px;
-    bottom: -450px;
-    left: 95px;
+    top: 799px;
+    bottom: -459px;
+    left: 96px;
     right: 0px;
     max-width: 40em;
     max-height: 40em;
@@ -295,8 +316,8 @@ img {
 
 .overlay#three {
     position: absolute;
-    top: 1335px;
-    bottom: -940px;
+    top: 1344px;
+    bottom: -947px;
     left: 688px;
     right: 0px;
     max-width: 40em;
@@ -308,8 +329,8 @@ img {
 
 .overlay#four {
     position: absolute;
-    top: 1825px;
-    bottom: -1430px;
+    top: 1833px;
+    bottom: -1438px;
     left: 95px;
     right: 0px;
     max-width: 40em;
@@ -321,8 +342,8 @@ img {
 
 .overlay#five {
     position: absolute;
-    top: 2315px;
-    bottom: -1925px;
+    top: 2323px;
+    bottom: -1929px;
     left: 688px;
     right: 0px;
     max-width: 40em;
@@ -337,7 +358,7 @@ img {
 .overlay#three:hover,
 .overlay#four:hover,
 .overlay#five:hover {
-    opacity: .9;
+    opacity: .95;
 }
 
 
