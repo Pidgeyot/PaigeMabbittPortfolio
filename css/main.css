@@ -97,12 +97,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/*Color Palatte*/
-/* Pink (235, 188, 188, 0.5) */
-/* Gold (146, 125, 5) */
-/* Gray (128,128,128) */
 
-@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
+/* @import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
 
 /* General */
 html {
@@ -111,6 +107,10 @@ html {
     background-size: cover;
     background-color: rgb(0, 0, 0);
 
+}
+
+body {
+    /* flexbox, width, responsive stuff */
 }
 
 h1 {
@@ -126,26 +126,21 @@ article {
     color: rgb(255, 255, 255);
 }
 
+article p {
+    padding: 25px;
+}
+
 article:after {
     clear: both;
     content: "";
     display: table;
 }
 
-
-
-article p {
-    padding: 25px;
-}
-
-
-
-
 /* Footer */
 footer {
     text-align: center;
     font-size: 1.3em;
-    padding: 50px 0 30px 0;
+    padding: 40px 0 30px 0;
     background-color: rgb(255, 255, 255);
     color: white;
 }
@@ -153,6 +148,7 @@ footer {
 footer p {
     background: -webkit-linear-gradient(rgb(0, 230, 161), rgb(0, 114, 207));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -163,7 +159,8 @@ footer a {
 /* Description List */
 dl {
     color: white;
-    margin: 0 0 0 250px;
+    margin: auto;
+    text-align: center;
 }
 
 dt {
@@ -174,7 +171,6 @@ dd {
     display: inline;
 }
 
-
 /* Nav */
 nav {
     color: rgb(255, 255, 255);
@@ -183,11 +179,14 @@ nav {
     margin: .5em 0;
     padding-right: 40px;
     border-radius: 15px 50px 30px;
-    height: 60px;
+    height: auto;
 
 }
 
 nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 2 auto;
     list-style: none;
     font-family: 'Nanum Pen Script', cursive;
     font-size: 25px;
@@ -195,39 +194,15 @@ nav ul {
 }
 
 nav li {
-    margin: 40px 85px 0px 85px;
+    margin: 0 auto;
     display: inline;
     background: -webkit-linear-gradient(rgb(0, 230, 161), rgb(0, 114, 207));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-a:link,
-a:visited {
-    color: rgb(0, 0, 0);
-}
-
 /* Overlay/Overlay Heading Text */
-#knowledge,
-#jobs {
-    margin-right: 325px;
-}
-
-#activities {
-    margin-left: 320px;
-}
-
-#school {
-    margin-left: 380px;
-}
-
-#other {
-    margin-right: 400px;
-}
 
 .text {
     font-size: 20px;
@@ -243,8 +218,9 @@ a:visited {
 
 /* Overlay Images */
 img {
+    width: 100%;
     max-width: 40em;
-    max-height: 40em;
+    height: auto;
     border-radius: 50%;
     position: relative;
     filter: hue-rotate(50deg) brightness(110%);
@@ -252,15 +228,14 @@ img {
 
 #books,
 #water {
-    margin: auto 6em;
+    margin: auto;
 }
 
 #bulb,
 #toys,
 #code {
-    margin: auto 7em;
+    margin: auto;
 }
-
 
 /* Overlay */
 
@@ -290,10 +265,10 @@ img {
 
 .overlay#one {
     position: absolute;
-    top: 309px;
-    bottom: 85px;
+    /* top: 309px;
+    bottom: 85.7px;
     left: 688px;
-    right: 0px;
+    right: 0px; */
     max-width: 40em;
     max-height: 40em;
     border-radius: 50%;
@@ -303,10 +278,10 @@ img {
 
 .overlay#two {
     position: absolute;
-    top: 799px;
+    /* top: 799px;
     bottom: -459px;
     left: 96px;
-    right: 0px;
+    right: 0px; */
     max-width: 40em;
     max-height: 40em;
     border-radius: 50%;
@@ -316,10 +291,10 @@ img {
 
 .overlay#three {
     position: absolute;
-    top: 1344px;
+    /* top: 1344px;
     bottom: -947px;
     left: 688px;
-    right: 0px;
+    right: 0px; */
     max-width: 40em;
     max-height: 40em;
     border-radius: 50%;
@@ -329,10 +304,10 @@ img {
 
 .overlay#four {
     position: absolute;
-    top: 1833px;
+    /* top: 1833px;
     bottom: -1438px;
     left: 95px;
-    right: 0px;
+    right: 0px; */
     max-width: 40em;
     max-height: 40em;
     border-radius: 50%;
@@ -342,10 +317,10 @@ img {
 
 .overlay#five {
     position: absolute;
-    top: 2323px;
+    /* top: 2323px;
     bottom: -1929px;
     left: 688px;
-    right: 0px;
+    right: 0px; */
     max-width: 40em;
     max-height: 40em;
     border-radius: 50%;
@@ -362,20 +337,19 @@ img {
 }
 
 
+/* Media: Phone */
+@media only screen and (max-width: 480px) {
+    nav ul {
+        display: flex;
+        flex-flow: column;
+    }
 
+    nav {
+        height: auto;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 /* ==========================================================================
    Helper classes
    ========================================================================== */
