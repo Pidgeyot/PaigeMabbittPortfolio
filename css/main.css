@@ -98,7 +98,9 @@ textarea {
    ========================================================================== */
 
 
-/* @import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
+
+/* !!!Flex pogressive enhancments!!! */
 
 /* General */
 html {
@@ -109,9 +111,6 @@ html {
 
 }
 
-body {
-    /* flexbox, width, responsive stuff */
-}
 
 h1 {
     font-family: 'Nanum Pen Script', cursive;
@@ -121,9 +120,13 @@ h1 {
     color: rgb(255, 255, 255);
 }
 
+
+
 /* Article */
 article {
     color: rgb(255, 255, 255);
+    width: 85%;
+    margin: auto;
 }
 
 article p {
@@ -202,7 +205,13 @@ nav li {
     -webkit-text-fill-color: transparent;
 }
 
-/* Overlay/Overlay Heading Text */
+/* Overlay Heading Testing */
+
+/* #knowledge,
+#jobs,
+#other {} */
+
+/*Overlay Text */
 
 .text {
     font-size: 20px;
@@ -237,7 +246,7 @@ img {
     margin: auto;
 }
 
-/* Overlay */
+/* Overlay Positioning (+text color)*/
 
 .overlay {
     opacity: 0;
@@ -253,18 +262,18 @@ img {
 }
 
 #bulb,
-#knowledge,
 #toys,
+#code,
+#knowledge,
 #jobs,
-#other,
-#code {
+#other {
     clear: both;
     float: right;
 
 }
 
 .overlay#one {
-    position: absolute;
+    position: relative;
     /* top: 309px;
     bottom: 85.7px;
     left: 688px;
@@ -277,7 +286,7 @@ img {
 }
 
 .overlay#two {
-    position: absolute;
+    position: relative;
     /* top: 799px;
     bottom: -459px;
     left: 96px;
@@ -290,7 +299,7 @@ img {
 }
 
 .overlay#three {
-    position: absolute;
+    position: relative;
     /* top: 1344px;
     bottom: -947px;
     left: 688px;
@@ -303,7 +312,7 @@ img {
 }
 
 .overlay#four {
-    position: absolute;
+    position: relative;
     /* top: 1833px;
     bottom: -1438px;
     left: 95px;
@@ -316,7 +325,7 @@ img {
 }
 
 .overlay#five {
-    position: absolute;
+    position: relative;
     /* top: 2323px;
     bottom: -1929px;
     left: 688px;
@@ -339,6 +348,10 @@ img {
 
 /* Media: Phone */
 @media only screen and (max-width: 480px) {
+    article {
+        width: 100%;
+    }
+
     nav ul {
         display: flex;
         flex-flow: column;
@@ -348,6 +361,7 @@ img {
         height: auto;
     }
 }
+
 
 */
 /* ==========================================================================
