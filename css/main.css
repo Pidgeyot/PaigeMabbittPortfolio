@@ -251,25 +251,6 @@ img {
     filter: hue-rotate(50deg) brightness(110%);
 }
 
-/* #books,
-#water,
-#school,
-#activities {
-    clear: both;
-    float: left;
-    margin: auto;
-}
-
-#bulb,
-#toys,
-#code,
-#knowledge,
-#jobs,
-#other {
-    clear: both;
-    float: right;
-    margin: auto;
-} */
 
 
 /* Overlay Positioning */
@@ -278,8 +259,7 @@ img {
     max-width: 40em;
     max-height: 40em;
     padding: 0;
-    margin: 0;
-    float: right;
+    margin: auto;
 }
 
 .overlay {
@@ -291,9 +271,8 @@ img {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    max-height: 30em;
     border-radius: 50%;
-    vertical-align: middle;
     -webkit-transition: .5s ease;
     -moz-transition: .5s ease;
     transition: .5s ease;
@@ -340,6 +319,12 @@ img {
 
 }
 
+/* Index Styles */
+.index {
+    display: inline;
+    margin: auto;
+    width: 50%;
+}
 
 
 /* ==========================================================================
