@@ -100,8 +100,6 @@ textarea {
 
 @import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
 
-/* !!!Flex pogressive enhancments!!! */
-
 /* General */
 html {
     background-image: url('https://images.pexels.com/photos/1050302/pexels-photo-1050302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
@@ -225,6 +223,8 @@ nav li {
     -webkit-flex: 1 1 auto;
     flex: 1 1 auto;
     color: rgb(0, 230, 161);
+    /* background testing */
+
 }
 
 #smalltext {
@@ -270,8 +270,7 @@ img#index {
 }
 
 div.overlay {
-    opacity: 1;
-    background-color: rgb(252, 252, 252);
+    opacity: 0;
     background-size: 100%;
     border-radius: 50%;
     -webkit-transition: .5s ease;
@@ -280,14 +279,6 @@ div.overlay {
     background-origin: padding-box;
 }
 
-img>div.overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
 
 
 
@@ -352,7 +343,6 @@ img>div.overlay {
         font-size: ;
     }
 }
-
 
 
 /* ==========================================================================
