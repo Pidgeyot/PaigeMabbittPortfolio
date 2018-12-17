@@ -211,30 +211,26 @@ nav li {
 /*Overlay Text */
 
 .text {
-    font-size: 1.3em;
+    font-size: 20px;
     position: absolute;
-    top: 45%;
-    left: 50%;
+    top: 37%;
+    left: 51%;
     transform: translate(-50%, -40%);
-    -webkit-display: flex;
-    display: flex;
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    -webkit-flex: 1 1 auto;
-    flex: 1 1 auto;
-    color: rgb(0, 230, 161);
-    /* background testing */
+    color: rgb(0, 230, 219);
+    background: -webkit-linear-gradient(rgb(0, 230, 161), rgb(0, 114, 207));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
+#mediumtext {
+    font-size: 18px;
+}
+
 #smalltext {
-    font-size: 1.1em;
-    -webkit-display: flex;
-    display: flex;
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    -webkit-flex: 3 1 auto;
-    flex: 3 1 auto;
+    font-size: 17px;
+    left: 48%;
 }
 
 /* Images */
@@ -270,16 +266,23 @@ img#index {
 }
 
 div.overlay {
-    opacity: 0;
-    background-size: 100%;
+    position: absolute;
+    top: 55px;
+    right: -10px;
+    bottom: 10px;
+    left: 10px;
+    max-width: 40em;
+    max-height: 40em;
     border-radius: 50%;
-    -webkit-transition: .5s ease;
-    -moz-transition: .5s ease;
-    transition: .5s ease;
-    background-origin: padding-box;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    transition: 0.6s;
+    vertical-align: middle;
+
 }
-
-
 
 
 .overlay#one:hover,
@@ -287,9 +290,8 @@ div.overlay {
 .overlay#three:hover,
 .overlay#four:hover,
 .overlay#five:hover {
-    opacity: .9;
+    opacity: 1;
 }
-
 
 /* Media: Phone */
 @media only screen and (max-width: 480px) {
@@ -323,11 +325,25 @@ div.overlay {
         margin: auto;
     }
 
+    div.overlay {
+        top: 36px;
+    }
+
+    .text,
+    .text#mediumtext {
+        font-size: 11px;
+    }
+
+    .text#smalltext {
+        font-size: 10px;
+        top: 40%;
+        left: 47%;
+    }
 
 }
 
-/* Media: Tablet(?) */
-@media only screen and (max-width: 650px) {
+/* Media: Tablet */
+@media only screen and (min-width: 481px) and (max-width: 685px) {
     nav ul {
         -webkit-display: flex;
         display: flex;
@@ -339,10 +355,18 @@ div.overlay {
         height: auto;
     }
 
-    .text {
-        font-size: ;
+    .text,
+    .text#mediumtext {
+        font-size: 15px;
+    }
+
+    .text#smalltext {
+        font-size: 14px;
+        top: 40%;
+        left: 48%;
     }
 }
+
 
 
 /* ==========================================================================
