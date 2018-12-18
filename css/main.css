@@ -97,10 +97,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+/* Nanum Pen font import */
 @import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
 
 /* General */
+/* Background image link and image positioning */
 html {
     background-image: url('https://images.pexels.com/photos/1050302/pexels-photo-1050302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
     background-attachment: fixed;
@@ -109,7 +110,7 @@ html {
 
 }
 
-
+/* Nanum Pen font, larger spacing, underlined, centered, and white color */
 h1 {
     font-family: 'Nanum Pen Script', cursive;
     letter-spacing: 1em;
@@ -121,6 +122,7 @@ h1 {
 
 
 /* Article */
+/* Article font color, spacing, alignment, padding for paragraphs, and prevention of container collapse */
 article {
     color: rgb(255, 255, 255);
     width: 85%;
@@ -139,6 +141,7 @@ article:after {
 }
 
 /* Footer */
+/* Font size and color, background color, text alignment, spacing, gradient color for text, and spacing for each link */
 footer {
     text-align: center;
     font-size: 1.3em;
@@ -159,6 +162,7 @@ footer a {
 }
 
 /* Description List */
+/* font color, styles, spacing, and alignment */
 dl {
     color: white;
     margin: auto;
@@ -174,6 +178,7 @@ dd {
 }
 
 /* Nav */
+/* Navigation list font, font color, background color, spacing, box shadow, flexbox style, and gradient for link text */
 nav {
     color: rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
@@ -209,7 +214,7 @@ nav li {
 
 
 /*Overlay Text */
-
+/* Text styles for text whithin the image overlay, setting the gradient color, position, and font size (including specific sizes for overlays with ids) */
 .text {
     font-size: 20px;
     position: absolute;
@@ -234,6 +239,7 @@ nav li {
 }
 
 /* Images */
+/* Image underneath the overlays and teh one on the index, setting the position, spacing, shape, box shadow and hue */
 img {
     display: block;
     width: 100%;
@@ -257,6 +263,7 @@ img#index {
 
 
 /* Overlay Positioning */
+/* Div that contains all the componets for one overlay. Sets the position, spacing, color, and transition effect for the hover */
 .bubble {
     position: relative;
     max-width: 40em;
@@ -284,7 +291,7 @@ div.overlay {
 
 }
 
-
+/* When the mouse hovers over the image, text and the overlay will appear */
 .overlay#one:hover,
 .overlay#two:hover,
 .overlay#three:hover,
@@ -294,6 +301,7 @@ div.overlay {
 }
 
 /* Media: Phone */
+/* For the phone, the article will take up more space, with the nav as a column instead of a row, as well as different positions and sizes for each of the texts in the overlay */
 @media only screen and (max-width: 480px) {
     article {
         width: 90%;
@@ -343,6 +351,7 @@ div.overlay {
 }
 
 /* Media: Tablet */
+/* For the tablet, the nav is a column instead of a row, along with different positions and sizes for each of the texts in the overlay */
 @media only screen and (min-width: 481px) and (max-width: 685px) {
     nav ul {
         -webkit-display: flex;
